@@ -1,0 +1,43 @@
+#!/bin/bash
+
+#----------------------------------------------
+#PATHS
+#----------------------------------------------
+CONFIG_DIR_PATH=/root/Kusai_Sipp/Automation/
+
+#----------------------------------------------
+#Network Parameters
+#----------------------------------------------
+CONFIG_LOCAL_IP=192.168.105.214
+CONFIG_LOCAL_PORT=5060
+CONFIG_MEDIA_IP=$CONFIG_LOCAL_IP
+CONFIG_MEDIA_PORT=$(expr "$CONFIG_LOCAL_PORT" + 500)
+
+#----------------------------------------------
+#SIP-P XML Input Parameters
+#----------------------------------------------
+CONFIG_CALL_QUANT=1
+CONFIG_CSV_PATH=$CONFIG_DIR_PATH/Csv/
+CONFIG_XML_PATH=$CONFIG_DIR_PATH/Sipp_scenarios/
+CONFIG_DISPLAY_NAME=SipAutomation
+
+#----------------------------------------------
+#Log Related Parameters
+#----------------------------------------------
+CONFIG_LOG_PATH=$CONFIG_DIR_PATH/Log/
+
+#----------------------------------------------
+#TCP-DUMP Parameters
+#----------------------------------------------
+CONFIG_PCAP_PATH=$CONFIG_DIR_PATH/Pcap/
+CONFIG_INTERFACE_NAME=eno1
+
+#----------------------------------------------
+#Paths dedicated to AutoXmlGen.sh
+#----------------------------------------------
+CONFIG_AUTO_GEN_XML_PATH=$CONFIG_DIR_PATH/Auto_generated_files/
+CONFIG_AUTO_GEN_XML_PARTS=$CONFIG_DIR_PATH/Xml_parts/
+
+#----------------------------------------------
+#End of file
+#----------------------------------------------
